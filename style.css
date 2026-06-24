@@ -1,0 +1,88 @@
+body{
+    background-color: #0b0e14;
+    color: #e2e8f0;
+}
+nav{
+    text-align: center;
+    padding: 15px;
+    background-color: #131720;
+    border-bottom: 1px solid #1e2535;
+}
+nav a {
+    color: #00e5ff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+nav a:hover {
+    background-color: rgba(0, 229, 255, 0.1);
+    color: white;
+}
+section {
+    background-color: #131720;
+    padding: 25px;
+    margin: 25px;
+    border-radius: 10px;
+    border: 1px solid #1e2535;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4)
+}
+section:hover {
+    border-color: #00e5ff;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 229, 255, 0.15)
+}
+header {
+    text-align: center;
+    padding: 30px;
+    border-bottom: 2px solid #00e5ff;
+}
+h1, h2 {
+    color: #00e5ff;
+}
+.option {
+    display: block;
+    background: #131720;
+    color: #e2e8f0;
+    border: 1px solid #1e2535;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.option:hover {
+    border-color: #00e5ff;
+    transform: translateY(-2px);
+}
+.correct {
+    background-color: rgba(0, 201, 122, 0.15);
+    border-color: #00c97a;
+}
+.wrong {
+    background-color: rgba(255, 77, 77, 0.15);
+    border-color: #ff4d4d;
+}
+.tagline {
+    color: #b0bec5;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+.logo {
+    font-size: 100px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 15px #00e5ff;
+}
+.example-image {
+    width: 65%;
+    max-width: 450px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 2px solid #1e2535;
+}

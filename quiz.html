@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cybersecurity Awareness Quiz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>📝 Cybersecurity Awareness Quiz</h1>
+</header>
+<nav>
+<a href="index.html">Home</a> |
+<a href="phishing-emails.html">Phishing Emails</a> |
+<a href="fake-websites.html">Fake Websites</a> |
+<a href="social-engineering.html">Social Engineering</a> |
+<a href="quiz.html">Quiz</a>
+</nav>
+<hr>
+<section>
+<h2>Question 1</h2>
+<p>You receive an email asking for your password.</p>
+<div class="option" onclick="checkAnswer(this, false)">
+    A. Share the password
+</div>
+<div class="option" onclick="checkAnswer(this, true)">
+    B. Ignore and report the email
+</div>
+</section>
+<hr>
+<section>
+<h2>Question 2</h2>
+<p>Which website is more likely to be legitimate?</p>
+<div class="option" onclick="checkAnswer(this, false)">
+    A. amaz0n-login-security.com
+</div>
+<div class="option" onclick="checkAnswer(this, true)">
+    B. amazon.com
+</div>
+</section>
+<hr>
+<section>
+<h2>Question 3</h2>
+<p>A caller claiming to be from your bank asks for your OTP. What should you do?</p>
+<div class="option" onclick="checkAnswer(this, true)">
+    A. Refuse and contact the bank directly
+</div>
+<div class="option" onclick="checkAnswer(this, false)">
+    B. Share the OTP
+</div>
+</section>
+<hr>
+<section>
+<h2>Question 4</h2>
+<p>Which of the following is a common sign of a phishing email?</p>
+<div class="option" onclick="checkAnswer(this, true)">
+    A. Suspicious links and urgent language
+</div>
+<div class="option" onclick="checkAnswer(this, false)">
+    B. Verified information from official sources
+</div>
+</section>
+<hr>
+<section>
+<h2>Question 5</h2>
+<p>Before entering personal information on a website, you should:</p>
+<div class="option" onclick="checkAnswer(this, false)">
+    B. Enter the information immediately
+</div>
+<div class="option" onclick="checkAnswer(this, true)">
+    A. Verify the website URL
+</div>
+</section>
+<hr>
+<footer>
+<p>© 2026 Cybersecurity Awareness Training Project</p>
+</footer>
+<script>
+    function checkAnswer(element, isCorrect) {
+        let options = document.querySelectorAll('.option');
+        options.forEach(opt => {opt.classList.remove('correct','wrong')});
+        if(isCorrect) {
+            element.classList.add('correct');
+        } else {
+            element.classList.add('wrong');
+        }
+    }
+</script>
+</body>
+</html>
